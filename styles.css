@@ -97,6 +97,11 @@ body{
     cursor: pointer;
     position: absolute;
     right: 1px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
 }
 /* NAVBAR END */
 /* SİDEBAR START*/
@@ -197,6 +202,11 @@ body{
     display: flex;
     align-items: center;
     column-gap: 30px;
+    transition: 1s ease-in-out;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -ms-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
 }
 .movie-item{
     position: relative;
@@ -287,4 +297,63 @@ body{
 .arrow:hover{
     opacity: 1;
 }
+/* Dark Mode Start */
+.container.active{
+    background-color: #fff;
+    color: black;
+}
+.navbar.active{
+    background-color: #fff;
+    color: black;
+}
+.sidebar.active {
+    background-color: #fff;
+    color: black;
+}
+.sidebar i.active{
+    color: black;
+}
+.movie-item-title.active{
+    color: black;
+}
+.toggle.active{
+    background-color: black;
+}
+.toggle-ball.active{
+    background-color: #fff;
+    transform: translateX(-20px);
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    -ms-transform: translateX(-20px);
+    -o-transform: translateX(-20px);
+    
+}
+.movie-list-filter select.active{
+    background-color: #fff;
+    color: black;
+}
+
+/* Dark Mode End */
+
+/* Responsive Start */
+@media (max-width: 800px) {
+    .menu-container {
+        display: none;
+    }
+    .featured-title{
+        width: 200px;
+    }
+    .featured-content{
+        height: 40vh;
+    }
+    .featured-desc{
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        max-width: 300px;
+        padding: 0;
+    }
+}
+/* Responsive End */
 /* ! CSS END */

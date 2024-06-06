@@ -188,6 +188,7 @@ body{
 }
 .movie-list-wrapper{
     overflow-x: hidden;
+    position: relative;
 }
 .movie-list{
     list-style: none;
@@ -268,4 +269,22 @@ body{
     opacity: 1;
 }
 /* Movie List End */
+.arrow{
+    width: 100px;
+    display: flex;
+    font-size: 120px;
+    position: absolute;
+    right: 0;
+    top: 100px;
+    cursor: pointer;
+    opacity: .5;
+    transition: 0.5s all ;
+    -webkit-transition: 0.5s all ;
+    -moz-transition: 0.5s all ;
+    -ms-transition: 0.5s all ;
+    -o-transition: 0.5s all ;
+}
+.arrow:hover{
+    opacity: 1;
+}
 /* ! CSS END */
